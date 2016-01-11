@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Start Page";
+}
+
+<div class="jumbotron">
+    <h1>Kraje świata</h1>
+    <p class="lead">Wybierz poniżej metodę/źródło skąd pobrane zostaną kraje lub dodaj nowy do pliku XML</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Z pliku XML</h2>
+        <p>Wczytanie struktury z pliku XML korzystając z XMLReader'a</p>
+        <p><a class="btn btn-default" href="@Url.Action("XML", "Country")">Click &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Korzystając z Stub'a</h2>
+        <p>Szybkie i dobre rozwiązanie które można używać podczas testów jednostkowych</p>
+        <p><a class="btn btn-default" href="@Url.Action("Stub", "Country")">Click &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Dodaj nowy kraj</h2>
+        <p>Dodawanie odbywa się tylko do pliku XML</p>
+        <p><a class="btn btn-default" href="@Url.Action("Add", "Country")">Click &raquo;</a></p>
+    </div>
+</div>
